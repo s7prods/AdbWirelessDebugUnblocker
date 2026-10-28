@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!--
-        Legacy module scope list.
-        "android" and "system" are both listed because LSPosed's legacy compatibility
-        layer maps them to system_server; the manager displays the system framework entry.
-    -->
     <array name="xposedscope">
-        <item>system</item>
+        <item>android</item>
         <item>com.android.settings</item>
     </array>
 </resources>
