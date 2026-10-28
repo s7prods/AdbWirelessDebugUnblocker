@@ -1,0 +1,4 @@
+// Top-level build file. Plugins are declared here but only applied in :app.
+plugins {
+    id 'com.android.application' version '8.13.2' apply false
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ADB Wireless Debug Unblocker</string>
+    <string name="module_description">允许在未连接无线局域网（Wi-Fi）时开启 Android 无线调试（ADB over Wi-Fi）。同时挂钩 Settings 与 system_server。</string>
+</resources>

@@ -1,0 +1,41 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'app.unblockwirelessdebugplus'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'app.unblockwirelessdebugplus'
+        minSdk 30 // Wireless debug minimal Android 11
+        targetSdk 36
+        versionCode 1
+        versionName '1.0.0'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+    // Legacy Xposed API historically lived on jcenter. If the coordinate below cannot be
+    // resolved, download api-82.jar (de.robv.android.xposed:api:82) into app/libs/ and use:
+    //     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+    maven { url 'https://jcenter.bintray.com' }
+}
+
+dependencies {
+    compileOnly fileTree(dir: 'libs', include: ['*.jar'])
+
+}
