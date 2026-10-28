@@ -1,4 +1,4 @@
-package app.unblockwirelessdebugplus;
+package com.unblock.wirelessdebug;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

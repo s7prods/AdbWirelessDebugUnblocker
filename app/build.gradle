@@ -3,15 +3,15 @@ plugins {
 }
 
 android {
-    namespace 'app.unblockwirelessdebugplus'
+    namespace 'io.github.s7prods.app.unblock_wireless_debug'
     compileSdk 36
 
     defaultConfig {
-        applicationId 'app.unblockwirelessdebugplus'
+        applicationId 'io.github.s7prods.app.unblock_wireless_debug'
         minSdk 30 // Wireless debug minimal Android 11
         targetSdk 36
         versionCode 1
-        versionName '1.0.0'
+        versionName '1.0.1'
     }
 
     buildTypes {
